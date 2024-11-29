@@ -15,6 +15,7 @@ inputs = {
     alert_conditions_name = "Mtix Movie Low Apdex!!!"
     alert_conditions_aggregation_window = 60
     alert_conditions_enable = true
+    alert_conditions_aggregation_method = "event_flow"
     alert_conditions_desc = <<EOF
 
 *What to Do:*

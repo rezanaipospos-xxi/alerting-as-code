@@ -14,11 +14,6 @@ resource "newrelic_notification_channel" "AlertChannel" {
     key = "channelId"
     value = "${var.alert_channel_slack_id}"
   }
-
-  # property {
-  #   key = "customDetailsSlack"
-  #   value = "issue id - {{issueId}}"
-  # }
 }
 
 

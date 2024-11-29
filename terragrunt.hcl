@@ -13,10 +13,10 @@ remote_state {
         if_exists = "overwrite_terragrunt"
     }
     config = {
-        project = "your-project-id"
+        project = "your-gcp-project-id"
         bucket  = "alerting-as-code" # Google Cloud Storage bucket required
         prefix  = "${local.env_name}/terraform.tfstate" # Path to the state file in the bucket
         location = "asia-southeast1"
-        impersonate_service_account = "{name-of-sa}@{projectid}.iam.gserviceaccount.com"
+        impersonate_service_account = "sa-terraform-bucket@{your-gcp-project-id}.iam.gserviceaccount.com"
     }
 }
